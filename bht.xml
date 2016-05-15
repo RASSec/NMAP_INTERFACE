@@ -1,0 +1,294 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 6.01 scan initiated Wed Feb 10 14:49:34 2016 as: nmap -v -n -Pn -p80 -&#45;open -&#45;script=banner,http-headers,http-title -oX /var/www/bht.xml 202.113.244.1/24 -->
+<nmaprun scanner="nmap" args="nmap -v -n -Pn -p80 -&#45;open -&#45;script=banner,http-headers,http-title -oX /var/www/bht.xml 202.113.244.1/24" start="1455086974" startstr="Wed Feb 10 14:49:34 2016" version="6.01" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="SYN Stealth Scan" time="1455086974"/>
+<taskend task="SYN Stealth Scan" time="1455086994" extrainfo="256 total ports"/>
+<taskbegin task="NSE" time="1455086994"/>
+<taskend task="NSE" time="1455087037"/>
+<host starttime="1455086974" endtime="1455087031"><status state="up" reason="user-set"/>
+<address addr="202.113.244.2" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="97299" rttvar="97299" to="486495"/>
+</host>
+<host starttime="1455086974" endtime="1455087006"><status state="up" reason="user-set"/>
+<address addr="202.113.244.8" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-headers" output="&#xa;  Date: Wed, 10 Feb 2016 06:46:56 GMT&#xa;  Server: Apache&#xa;  Last-Modified: Tue, 09 Feb 2016 17:39:13 GMT&#xa;  ETag: &quot;ffa8-52b59cbb24076&quot;&#xa;  Accept-Ranges: bytes&#xa;  Content-Length: 65448&#xa;  Cache-Control: max-age=600&#xa;  Expires: Wed, 10 Feb 2016 06:56:56 GMT&#xa;  Vary: Accept-Encoding&#xa;  Connection: close&#xa;  Content-Type: text/html&#xa;  Content-Language: zh-CN&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-title" output="\xE5\xA4\xA9\xE6\xB4\xA5\xE8\x81\x8C\xE4\xB8\x9A\xE6\x8A\x80\xE6\x9C\xAF\xE5\xB8\x88\xE8\x8C\x83\xE5\xA4\xA7\xE5\xAD\xA6"/></port>
+</ports>
+<times srtt="90652" rttvar="90652" to="453260"/>
+</host>
+<host starttime="1455086974" endtime="1455087008"><status state="up" reason="user-set"/>
+<address addr="202.113.244.9" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-headers" output="&#xa;  Date: Wed, 10 Feb 2016 01:57:25 GMT&#xa;  Server: Apache/2.0.52 (Unix) mod_ssl/2.0.52 OpenSSL/0.9.7e&#xa;  Last-Modified: Thu, 27 Nov 2008 03:56:56 GMT&#xa;  ETag: &quot;618b91-10e-bc55b200&quot;&#xa;  Accept-Ranges: bytes&#xa;  Content-Length: 270&#xa;  Connection: close&#xa;  Content-Type: text/html; charset=GB2312&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-title" output="For Your Information"/></port>
+</ports>
+<times srtt="96079" rttvar="96079" to="480395"/>
+</host>
+<host starttime="1455086974" endtime="1455087025"><status state="up" reason="user-set"/>
+<address addr="202.113.244.12" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="239723" rttvar="239723" to="1198615"/>
+</host>
+<host starttime="1455086974" endtime="1455087015"><status state="up" reason="user-set"/>
+<address addr="202.113.244.17" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-title" output="Site doesn&apos;t have a title (text/html)."/><script id="http-headers" output="&#xa;  Connection: close&#xa;  Date: Wed, 10 Feb 2016 06:42:19 GMT&#xa;  Server: Microsoft-IIS/6.0&#xa;  X-Powered-By: ASP.NET&#xa;  X-Powered-By: PHP/5.1.6&#xa;  Content-type: text/html&#xa;  &#xa;  (Request type: GET)&#xa;"/></port>
+</ports>
+<times srtt="90235" rttvar="90235" to="451175"/>
+</host>
+<host starttime="1455086974" endtime="1455087005"><status state="up" reason="user-set"/>
+<address addr="202.113.244.18" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-title" output="\xC4\xFA\xCE\xB4\xB1\xBB\xCA\xDA\xC8\xA8\xB2\xE9\xBF\xB4\xB8\xC3\xD2\xB3"/><script id="http-headers" output="&#xa;  Content-Length: 1251&#xa;  Content-Type: text/html&#xa;  Server: Microsoft-IIS/6.0&#xa;  Date: Wed, 10 Feb 2016 06:49:14 GMT&#xa;  Connection: close&#xa;  &#xa;  (Request type: GET)&#xa;"/></port>
+</ports>
+<times srtt="89999" rttvar="89999" to="449995"/>
+</host>
+<host starttime="1455086974" endtime="1455087010"><status state="up" reason="user-set"/>
+<address addr="202.113.244.20" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-title" output="\xC4\xFA\xCE\xB4\xB1\xBB\xCA\xDA\xC8\xA8\xB2\xE9\xBF\xB4\xB8\xC3\xD2\xB3"/><script id="http-headers" output="&#xa;  Content-Length: 1251&#xa;  Content-Type: text/html&#xa;  Server: Microsoft-IIS/6.0&#xa;  Date: Wed, 10 Feb 2016 06:49:18 GMT&#xa;  Connection: close&#xa;  &#xa;  (Request type: GET)&#xa;"/></port>
+</ports>
+<times srtt="90077" rttvar="90077" to="450385"/>
+</host>
+<host starttime="1455086974" endtime="1455087005"><status state="up" reason="user-set"/>
+<address addr="202.113.244.44" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-headers" output="&#xa;  Date: Wed, 10 Feb 2016 06:51:30 GMT&#xa;  Server: Apache&#xa;  Cache-Control: private&#xa;  Set-Cookie: JSESSIONID=cfaFMnuZW86hKgPVV8jlv; path=/&#xa;  Content-Type: text/html; charset=GBK&#xa;  Connection: close&#xa;  &#xa;  (Request type: HEAD)&#xa;"/></port>
+</ports>
+<times srtt="98098" rttvar="98098" to="490490"/>
+</host>
+<host starttime="1455086974" endtime="1455087011"><status state="up" reason="user-set"/>
+<address addr="202.113.244.45" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-headers" output="&#xa;  Connection: close&#xa;  Date: Wed, 10 Feb 2016 06:55:07 GMT&#xa;  Server: Microsoft-IIS/6.0&#xa;  X-Powered-By: ASP.NET&#xa;  X-AspNet-Version: 4.0.30319&#xa;  Set-Cookie: ASP.NET_SessionId=mcszbdby3hnftit3hspy335s; path=/; HttpOnly&#xa;  Set-Cookie: ASP.NET_SessionId_NS_Sig=oenCV6mdxG1jvlD5; path=/; HttpOnly&#xa;  Cache-Control: private&#xa;  Content-Type: text/html; charset=utf-8&#xa;  Content-Length: 5738&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-title" output="\xE7\xBB\xBC\xE5\x90\x88\xE6\x9C\x8D\xE5\x8A\xA1\xE7\xB3\xBB\xE7\xBB\x9F-\xE6\x95\x99\xE5\xB8\x88\xE7\xAB\xAF"/></port>
+</ports>
+<times srtt="112294" rttvar="112294" to="561470"/>
+</host>
+<host starttime="1455086974" endtime="1455087025"><status state="up" reason="user-set"/>
+<address addr="202.113.244.49" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-title" output="\xE5\xA4\xA9\xE6\xB4\xA5\xE8\x81\x8C\xE4\xB8\x9A\xE6\x8A\x80\xE6\x9C\xAF\xE5\xB8\x88\xE8\x8C\x83\xE5\xA4\xA7\xE5\xAD\xA6"/><script id="http-headers" output="&#xa;  Server: Apache-Coyote/1.1&#xa;  Set-Cookie: JSESSIONID=8300C12A21967DC7691E0CF4DDB98324; Path=/&#xa;  Content-Type: text/html;charset=UTF-8&#xa;  Content-Length: 5254&#xa;  Date: Wed, 10 Feb 2016 06:58:27 GMT&#xa;  Connection: close&#xa;  &#xa;  (Request type: HEAD)&#xa;"/></port>
+</ports>
+<times srtt="90441" rttvar="90441" to="452205"/>
+</host>
+<host starttime="1455086974" endtime="1455087031"><status state="up" reason="user-set"/>
+<address addr="202.113.244.50" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="83751" rttvar="83751" to="418755"/>
+</host>
+<host starttime="1455086974" endtime="1455087018"><status state="up" reason="user-set"/>
+<address addr="202.113.244.51" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-title" output="\xBF\xC6\xD1\xD0\xB9\xDC\xC0\xED\xCF\xB5\xCD\xB3"/><script id="http-headers" output="&#xa;  Date: Wed, 10 Feb 2016 06:32:12 GMT&#xa;  X-Frame-Options: SAMEORIGIN&#xa;  Set-Cookie: JSESSIONID=73E1080F580754FA603376FA35C71976; Path=/&#xa;  Content-Type: text/html;charset=GBK&#xa;  Connection: close&#xa;  Transfer-Encoding: chunked&#xa;  &#xa;  (Request type: GET)&#xa;"/></port>
+</ports>
+<times srtt="90063" rttvar="90063" to="450315"/>
+</host>
+<host starttime="1455086974" endtime="1455087006"><status state="up" reason="user-set"/>
+<address addr="202.113.244.52" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-headers" output="&#xa;  Content-Length: 1193&#xa;  Content-Type: text/html&#xa;  Content-Location: http://202.113.244.52/iisstart.htm&#xa;  Last-Modified: Fri, 21 Feb 2003 12:15:52 GMT&#xa;  Accept-Ranges: bytes&#xa;  ETag: &quot;0ce1f9a2d9c21:36e&quot;&#xa;  Server: Microsoft-IIS/6.0&#xa;  X-Powered-By: ASP.NET&#xa;  Date: Wed, 10 Feb 2016 06:13:28 GMT&#xa;  Connection: close&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-title" output="\xBD\xA8\xC9\xE8\xD6\xD0"/></port>
+</ports>
+<times srtt="122766" rttvar="122766" to="613830"/>
+</host>
+<host starttime="1455086974" endtime="1455087036"><status state="up" reason="user-set"/>
+<address addr="202.113.244.53" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="144457" rttvar="144457" to="722285"/>
+</host>
+<host starttime="1455086974" endtime="1455087005"><status state="up" reason="user-set"/>
+<address addr="202.113.244.57" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-headers" output="&#xa;  Connection: close&#xa;  Date: Wed, 10 Feb 2016 06:33:07 GMT&#xa;  Server: Microsoft-IIS/6.0&#xa;  X-Powered-By: ASP.NET&#xa;  Content-Length: 3603&#xa;  Content-Type: text/html&#xa;  Set-Cookie: ASPSESSIONIDSSBRDBCT=HHJBKMGBGKPGKEEBJECKPOMB; path=/&#xa;  Cache-control: private&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-title" output="Web\xB2\xE9\xD1\xAF\xCF\xB5\xCD\xB3"/></port>
+</ports>
+<times srtt="149652" rttvar="149652" to="748260"/>
+</host>
+<host starttime="1455086974" endtime="1455087026"><status state="up" reason="user-set"/>
+<address addr="202.113.244.58" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="154069" rttvar="154069" to="770345"/>
+</host>
+<host starttime="1455086974" endtime="1455087007"><status state="up" reason="user-set"/>
+<address addr="202.113.244.60" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-title" output="\xE7\x94\xA8\xE6\x88\xB7\xE7\x99\xBB\xE5\xBD\x95 - \xE5\xA4\xA9\xE6\xB4\xA5\xE8\x81\x8C\xE4\xB8\x9A\xE6\x8A\x80\xE6\x9C\xAF\xE5\xB8\x88\xE8\x8C\x83\xE5\xA4\xA7\xE5\xAD\xA6"/><script id="http-headers" output="&#xa;  Date: Wed, 10 Feb 2016 14:35:09 GMT&#xa;  Server: Apache/2.2.3 (CentOS)&#xa;  X-Powered-By: PHP/5.1.6&#xa;  Set-Cookie: nanbeisns_csrf_test_name=b553257284bee344f9bc9c657491e6e0; expires=Wed, 10-Feb-2016 16:35:09 GMT; path=/&#xa;  P3P: CP=&quot;CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA div COM NAV OTC NOI DSP COR&quot;&#xa;  Set-Cookie: nanbeisns_social_session=B2BVbwlpCjRdfV50UT5QMABiDDtTJAguAGIEJA0kBzpQOAAwAVYHbAlrUHIIZ1cgCGkLYVI1UjlYKFY6UDYHYlBgVTQAbQE0BTYNNgk5UzUHZ1VhCW4KP10zXjVRYlBgADYMMVM3CD8AYwRvDTMHMVBvADsBbwc3CT9QcghnVyAIaQtjUjdSOVgoVjJQdQcNUDZVYgA%2BAScFZw0gCXJTcwc6VSYJZwo%2FXTRePVEmUDAAYwwwUygIbAAyBHkNZAdrUHkAbQE5BycJNFAjCGZXYghjC2hSJVJ2WHlWPlB3Bw1QNlVhAD8BOwV2DXEJOlMiBztVYAltCjRdJF5KUWtQewA7DG1Tagg8ACgEYg15B2NQdwB2AWoHagliUCAIPVcnCDoLMFJrUmZYMVZ7UEsHP1A2VXYAegEGBWENIQloUyEHdVU8CTMKaV0mXkJRalBmADsMb1NjCGYAJwQ%2FDSMHcVBsAC0BMwc0CTxQagh%2BVz8IMgshUnNSXFhrVjhQcQc7UCFVbwAuASwFIA1oCWhTawcwVWEJaAo7XTdeNlEwUDgAYgw4Uz0IIA%3D%3D; expires=Thu, 11-Feb-2016 14:35:09 GMT; path=/&#xa;  Connection: close&#xa;  Transfer-Encoding: chunked&#xa;  Content-Type: text/html; charset=utf-8&#xa;  &#xa;  (Request type: GET)&#xa;"/></port>
+</ports>
+<times srtt="150848" rttvar="150848" to="754240"/>
+</host>
+<host starttime="1455086974" endtime="1455087014"><status state="up" reason="user-set"/>
+<address addr="202.113.244.65" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-title" output="Not Found"/><script id="http-headers" output="&#xa;  Content-Type: text/html; charset=us-ascii&#xa;  Server: Microsoft-HTTPAPI/2.0&#xa;  Date: Wed, 10 Feb 2016 06:37:56 GMT&#xa;  Connection: close&#xa;  Content-Length: 315&#xa;  &#xa;  (Request type: GET)&#xa;"/></port>
+</ports>
+<times srtt="94871" rttvar="94871" to="474355"/>
+</host>
+<host starttime="1455086974" endtime="1455087007"><status state="up" reason="user-set"/>
+<address addr="202.113.244.71" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-headers" output="&#xa;  Server: Apache-Coyote/1.1&#xa;  Accept-Ranges: bytes&#xa;  ETag: W/&quot;327-1252396138000&quot;&#xa;  Last-Modified: Tue, 08 Sep 2009 07:48:58 GMT&#xa;  Content-Type: text/html&#xa;  Content-Language: zh-CN&#xa;  Content-Length: 327&#xa;  Date: Wed, 10 Feb 2016 06:41:43 GMT&#xa;  Connection: close&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-title" output="\xBD\xF0\xC1\xFA\xBF\xA8\xBD\xF0\xC8\xDA\xBB\xAF\xD2\xBB\xBF\xA8\xCD\xA8\xCD\xF8\xD5\xBE\xB2\xE9\xD1\xAF\xD7\xD3\xCF\xB5\xCD\xB3"/></port>
+</ports>
+<times srtt="83406" rttvar="83406" to="417030"/>
+</host>
+<host starttime="1455086974" endtime="1455087015"><status state="up" reason="user-set"/>
+<address addr="202.113.244.82" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-title" output="IIS7"/><script id="http-headers" output="&#xa;  Content-Length: 689&#xa;  Content-Type: text/html&#xa;  Last-Modified: Tue, 07 Jul 2015 15:44:21 GMT&#xa;  Accept-Ranges: bytes&#xa;  ETag: &quot;e44ad4cacbb8d01:0&quot;&#xa;  Server: Microsoft-IIS/7.5&#xa;  X-Powered-By: ASP.NET&#xa;  Date: Wed, 10 Feb 2016 06:48:18 GMT&#xa;  Connection: close&#xa;  &#xa;  (Request type: HEAD)&#xa;"/></port>
+</ports>
+<times srtt="109659" rttvar="109659" to="548295"/>
+</host>
+<host starttime="1455086974" endtime="1455087005"><status state="up" reason="user-set"/>
+<address addr="202.113.244.84" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-headers" output="&#xa;  Cache-Control: private&#xa;  Content-Length: 3761&#xa;  Content-Type: text/html; charset=utf-8&#xa;  Server: Microsoft-IIS/7.5&#xa;  X-AspNet-Version: 4.0.30319&#xa;  Set-Cookie: ASP.NET_SessionId=c35utqepuz3jzzahdfkyknrf; path=/; HttpOnly&#xa;  X-Powered-By: ASP.NET&#xa;  Date: Wed, 10 Feb 2016 14:48:00 GMT&#xa;  Connection: close&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-title" output="\xE5\xA4\xA9\xE6\xB4\xA5\xE8\x81\x8C\xE4\xB8\x9A\xE6\x8A\x80\xE6\x9C\xAF\xE5\xB8\x88\xE8\x8C\x83\xE5\xA4\xA7\xE5\xAD\xA6\xE7\xBD\x91\xE4\xB8\x8A\xE8\xB4\xA2\xE5\x8A\xA1\xE5\xB9\xB3\xE5\x8F\xB0"/></port>
+</ports>
+<times srtt="117583" rttvar="117583" to="587915"/>
+</host>
+<host starttime="1455086974" endtime="1455087015"><status state="up" reason="user-set"/>
+<address addr="202.113.244.86" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-headers" output="&#xa;  Cache-Control: private&#xa;  Content-Length: 24349&#xa;  Content-Type: text/html; charset=gb2312&#xa;  Server: Microsoft-IIS/7.5&#xa;  Set-Cookie: ASP.NET_SessionId=l2yitd1sbtpmftwovb25ge4p; path=/; HttpOnly&#xa;  X-AspNet-Version: 4.0.30319&#xa;  X-Powered-By: ASP.NET&#xa;  Date: Wed, 10 Feb 2016 06:48:02 GMT&#xa;  Connection: close&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-title" output="\xCC\xEC\xBD\xF2\xD6\xB0\xD2\xB5\xBC\xBC\xCA\xF5\xCA\xA6\xB7\xB6\xB4\xF3\xD1\xA7\xCD\xB3\xD2\xBB\xD6\xA7\xB8\xB6\xC6\xBD\xCC\xA8"/></port>
+</ports>
+<times srtt="100785" rttvar="100785" to="503925"/>
+</host>
+<host starttime="1455086974" endtime="1455087014"><status state="up" reason="user-set"/>
+<address addr="202.113.244.98" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-title" output="\xB5\xC7\xC2\xBD"/><script id="http-headers" output="&#xa;  Connection: close&#xa;  Date: Wed, 10 Feb 2016 06:34:15 GMT&#xa;  Server: Microsoft-IIS/6.0&#xa;  X-Powered-By: ASP.NET&#xa;  X-AspNet-Version: 1.1.4322&#xa;  Set-Cookie: ASP.NET_SessionId=wip4jf45vlpkei45dle4gm55; path=/&#xa;  Cache-Control: private&#xa;  Content-Type: text/html; charset=gb2312&#xa;  Content-Length: 5442&#xa;  &#xa;  (Request type: HEAD)&#xa;"/></port>
+</ports>
+<times srtt="95932" rttvar="95932" to="479660"/>
+</host>
+<host starttime="1455086974" endtime="1455087013"><status state="up" reason="user-set"/>
+<address addr="202.113.244.99" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-headers" output="&#xa;  Connection: close&#xa;  Date: Wed, 10 Feb 2016 06:53:07 GMT&#xa;  Server: Microsoft-IIS/6.0&#xa;  X-Powered-By: ASP.NET&#xa;  X-AspNet-Version: 1.1.4322&#xa;  Set-Cookie: ASP.NET_SessionId=uBwabH7o0WNiwfb3LDx_DXopqdelVytgmGjbjwHv0x_HFxYUFnE*; path=/; HttpOnly&#xa;  Cache-Control: private&#xa;  Content-Type: text/html; charset=gb2312&#xa;  Content-Length: 5514&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-title" output="\xB5\xC7\xC2\xBD"/></port>
+</ports>
+<times srtt="90075" rttvar="90075" to="450375"/>
+</host>
+<host starttime="1455086974" endtime="1455087015"><status state="up" reason="user-set"/>
+<address addr="202.113.244.100" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-title" output="\xE5\xA4\xA9\xE6\xB4\xA5\xE8\x81\x8C\xE4\xB8\x9A\xE6\x8A\x80\xE6\x9C\xAF\xE5\xB8\x88\xE8\x8C\x83\xE5\xA4\xA7\xE5\xAD\xA6 2014\xE5\xB9\xB4\xE6\x96\xB0\xE7\x94\x9F\xE6\x8A\xA5\xE8\x80\x83\xE6\x8C\x87\xE5\x8D\x97"/><script id="http-headers" output="&#xa;  Content-Length: 16193&#xa;  Content-Type: text/html&#xa;  Content-Location: http://202.113.244.100/index.html&#xa;  Last-Modified: Mon, 09 Jun 2014 12:18:26 GMT&#xa;  Accept-Ranges: bytes&#xa;  ETag: &quot;01510eadc83cf1:4f2&quot;&#xa;  Server: Microsoft-IIS/6.0&#xa;  X-Powered-By: ASP.NET&#xa;  Date: Wed, 10 Feb 2016 06:53:29 GMT&#xa;  Connection: close&#xa;  &#xa;  (Request type: HEAD)&#xa;"/></port>
+</ports>
+<times srtt="99337" rttvar="99337" to="496685"/>
+</host>
+<host starttime="1455086974" endtime="1455087037"><status state="up" reason="user-set"/>
+<address addr="202.113.244.102" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="95550" rttvar="95550" to="477750"/>
+</host>
+<host starttime="1455086974" endtime="1455087015"><status state="up" reason="user-set"/>
+<address addr="202.113.244.108" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-title" output="\xE7\x99\xBB\xE9\x99\x86"/><script id="http-headers" output="&#xa;  Connection: close&#xa;  Date: Wed, 10 Feb 2016 06:40:38 GMT&#xa;  Server: Microsoft-IIS/6.0&#xa;  X-Powered-By: ASP.NET&#xa;  X-AspNet-Version: 4.0.30319&#xa;  X-AspNetMvc-Version: 3.0&#xa;  Cache-Control: private&#xa;  Content-Type: text/html; charset=utf-8&#xa;  Content-Length: 2146&#xa;  &#xa;  (Request type: GET)&#xa;"/></port>
+</ports>
+<times srtt="109215" rttvar="109215" to="546075"/>
+</host>
+<host starttime="1455086974" endtime="1455087014"><status state="up" reason="user-set"/>
+<address addr="202.113.244.114" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-title" output="Site doesn&apos;t have a title (text/html; charset=utf-8)."/><script id="http-headers" output="&#xa;  Cache-Control: private&#xa;  Content-Length: 75&#xa;  Content-Type: text/html; charset=utf-8&#xa;  Server: Microsoft-IIS/7.5&#xa;  Set-Cookie: ASP.NET_SessionId=k52m30z4ayvvp5apf2s5apsw; path=/; HttpOnly&#xa;  Set-Cookie: ASP.NET_SessionId_NS_Sig=oenCV6mdwjsi_Rb9; path=/; HttpOnly&#xa;  X-AspNet-Version: 4.0.30319&#xa;  X-Powered-By: ASP.NET&#xa;  Date: Wed, 10 Feb 2016 06:48:33 GMT&#xa;  Connection: close&#xa;  &#xa;  (Request type: HEAD)&#xa;"/></port>
+</ports>
+<times srtt="232850" rttvar="192777" to="1003958"/>
+</host>
+<host starttime="1455086974" endtime="1455087021"><status state="up" reason="user-set"/>
+<address addr="202.113.244.118" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-title" output="Site doesn&apos;t have a title (text/html)."/><script id="http-headers" output="&#xa;  Content-Type: text/html&#xa;  Date: Wed, 10 Feb 2016 06:55:09 GMT&#xa;  Connection: close&#xa;  Content-Length: 39&#xa;  &#xa;  (Request type: GET)&#xa;"/></port>
+</ports>
+<times srtt="227450" rttvar="198060" to="1019690"/>
+</host>
+<host starttime="1455086974" endtime="1455087006"><status state="up" reason="user-set"/>
+<address addr="202.113.244.122" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-headers" output="&#xa;  Cache-Control: private&#xa;  Content-Length: 9044&#xa;  Content-Type: text/html; charset=utf-8&#xa;  Server: Microsoft-IIS/7.5&#xa;  Set-Cookie: ASP.NET_SessionId=5jlhzt55af1xoe5540v3zcfv; path=/; HttpOnly&#xa;  Set-Cookie: ASP.NET_SessionId_NS_Sig=oenCV6mdnGR87gP8; path=/; HttpOnly&#xa;  X-AspNet-Version: 2.0.50727&#xa;  X-UA-Compatible: IE=EmulateIE7&#xa;  Date: Wed, 10 Feb 2016 06:44:23 GMT&#xa;  Connection: close&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-title" output="\xE7\x99\xBB\xE5\xBD\x95"/></port>
+</ports>
+<times srtt="228951" rttvar="195373" to="1010443"/>
+</host>
+<host starttime="1455086974" endtime="1455087007"><status state="up" reason="user-set"/>
+<address addr="202.113.244.125" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-headers" output="&#xa;  Date: Thu, 04 Jan 2001 09:31:57 GMT&#xa;  Server: HTTPsrv&#xa;  Connection: close&#xa;  Content-Length: 1190&#xa;  Content-Type: text/html&#xa;  &#xa;  (Request type: HEAD)&#xa;"/></port>
+</ports>
+<times srtt="236203" rttvar="210094" to="1076579"/>
+</host>
+<host starttime="1455086974" endtime="1455087021"><status state="up" reason="user-set"/>
+<address addr="202.113.244.129" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-title" output="Did not follow redirect to http://202.113.244.210 and no page was returned."/><script id="http-headers" output="&#xa;  Server: DrcomServer1.0&#xa;  Location: http://202.113.244.210&#xa;  Cache-Control: no-cache&#xa;  Content-Length: 0&#xa;  Connection: close&#xa;  &#xa;  (Request type: GET)&#xa;"/></port>
+</ports>
+<times srtt="119991" rttvar="119991" to="599955"/>
+</host>
+<host starttime="1455086974" endtime="1455087011"><status state="up" reason="user-set"/>
+<address addr="202.113.244.167" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-title" output="Not Found"/><script id="http-headers" output="&#xa;  Content-Type: text/html; charset=us-ascii&#xa;  Server: Microsoft-HTTPAPI/2.0&#xa;  Date: Wed, 10 Feb 2016 06:50:30 GMT&#xa;  Connection: close&#xa;  Content-Length: 315&#xa;  &#xa;  (Request type: GET)&#xa;"/></port>
+</ports>
+<times srtt="108461" rttvar="108461" to="542305"/>
+</host>
+<host starttime="1455086974" endtime="1455087014"><status state="up" reason="user-set"/>
+<address addr="202.113.244.185" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-headers" output="&#xa;  Cache-Control: private&#xa;  Content-Length: 75&#xa;  Content-Type: text/html; charset=utf-8&#xa;  Server: Microsoft-IIS/7.5&#xa;  Set-Cookie: ASP.NET_SessionId=zhy2dqvwcjxarcxszowmmddx; path=/; HttpOnly&#xa;  X-AspNet-Version: 4.0.30319&#xa;  X-Powered-By: ASP.NET&#xa;  Date: Wed, 10 Feb 2016 06:48:21 GMT&#xa;  Connection: close&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-title" output="Site doesn&apos;t have a title (text/html; charset=utf-8)."/></port>
+</ports>
+<times srtt="108800" rttvar="108800" to="544000"/>
+</host>
+<host starttime="1455086974" endtime="1455087017"><status state="up" reason="user-set"/>
+<address addr="202.113.244.233" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" method="table" conf="3"/><script id="http-title" output="\xC8\xF1\xBD\xDD\xCD\xF8\xC2\xE7"/><script id="http-headers" output="&#xa;  Date: Mon, 01 Mar 1993 00:26:11 UTC&#xa;  Server: Start HTTP-Server/1.0&#xa;  Content-Type: text/html&#xa;  Content-length: 1705&#xa;  Expires: Thu, 16 Feb 1989 00:00:00 GMT&#xa;  &#xa;  (Request type: GET)&#xa;"/></port>
+</ports>
+<times srtt="95104" rttvar="95104" to="475520"/>
+</host>
+<runstats><finished time="1455087037" timestr="Wed Feb 10 14:50:37 2016" elapsed="62.66" summary="Nmap done at Wed Feb 10 14:50:37 2016; 256 IP addresses (256 hosts up) scanned in 62.66 seconds" exit="success"/><hosts up="256" down="0" total="256"/>
+</runstats>
+</nmaprun>
