@@ -10,4 +10,7 @@
     
     php import1.php test_nmap.xml
 
+__author__ : yds
+
+
 感谢 @offensive-security.com 提供原始代码
